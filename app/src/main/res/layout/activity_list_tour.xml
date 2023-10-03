@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TourUser.ListTour"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="#cde"
+        android:gravity="center|left"
+        android:paddingLeft="14dp"
+        android:text="Danh sách các tour du lịch"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/custom_color_bottom_nav"
+        app:itemTextColor="@color/custom_color_bottom_nav"
+        app:itemRippleColor="@android:color/transparent"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        app:menu="@menu/menu_user"
+        />
+
+    <ListView
+        android:id="@+id/lvtour"
+        android:layout_width="wrap_content"
+        android:layout_height="478dp"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp" />
+
+    <ImageButton
+        android:id="@+id/btnsearchtour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="590dp"
+        android:background="#2196F3"
+        android:textSize="20sp"
+        app:srcCompat="@drawable/ic_search" />
+</RelativeLayout>

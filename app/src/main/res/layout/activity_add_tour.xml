@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TourAdmin.AddTourActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:text="Thêm tour du lịch mới"
+        android:textColor="#EA0606"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="always"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:hint="Tên tour du lịch"
+            android:textSize="20sp"
+            android:theme="@style/myEditText" />
+
+        <EditText
+            android:id="@+id/txtDesc"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Mô tả tour du lịch"
+            android:maxLines="10"
+            android:lines="2"
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            android:theme="@style/myEditText" />
+
+        <EditText
+            android:id="@+id/txtTime"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Thời gian"
+            android:textSize="20sp"
+            android:theme="@style/myEditText" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Giá tour du lịch"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:theme="@style/myEditText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgCamera"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_marginLeft="10sp"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <ImageView
+                android:id="@+id/imgview"
+                android:layout_width="230sp"
+                android:layout_height="230sp"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <ImageButton
+                android:id="@+id/imgFolder"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                app:srcCompat="@drawable/ic_folder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30sp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAddTour"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:text="THÊM"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="HỦY"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

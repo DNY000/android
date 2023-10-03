@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add_cart"
+        android:title="THÊM VÀO GIỎ HÀNG"
+        android:icon="@drawable/cart"
+        />
+    <item
+        android:id="@+id/action_booking_tour"
+        android:title="ĐẶT NGAY"
+        android:icon="@drawable/booking"
+
+        />
+</menu>
